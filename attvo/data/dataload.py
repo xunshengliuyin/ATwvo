@@ -7,7 +7,7 @@ from torchvision import transforms
 from tools.utils import process_poses, calc_vos_simple, load_image
 from torch.utils import data
 from functools import partial
-
+#需要确认图片与真实值是否对应
 
 class SevenScenes(data.Dataset):
     def __init__(self, scene, data_path, train, transform=None, target_transform=None, mode=0, seed=7, real=False,
